@@ -9,6 +9,8 @@
          (для windows: celery -A main.celery worker -l info -P eventlet)
       - python main.py 
    
+   > Ссылка на документ google таблицы: [Google Sheets](https://docs.google.com/spreadsheets/d/1iidER40PNhBhtWDyUMdTvr5FoSJUr7rftr4t4IltMxE/edit?usp=sharing)
+   
    > Веб интерфейс приложения будет доступен по адресу: http://127.0.0.1:5000/
 
 <details>
