@@ -5,7 +5,8 @@
    - Находясь в текущей директории, введите команду в терминале: docker-compose up
    - По окончанию запуска контейнеров с базами данных, введите следующие команды в новых окнах терминала:
       - pip install -r requirements.txt
-      - celery -A main.celery worker -l info (для windows: celery -A main.celery worker -l info -P eventlet)
+      - celery -A main.celery worker -l info 
+         (для windows: celery -A main.celery worker -l info -P eventlet)
       - python main.py 
    
    > Веб интерфейс приложения будет доступен по адресу: http://127.0.0.1:5000/
