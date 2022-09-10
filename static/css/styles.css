@@ -1,0 +1,128 @@
+html, body {
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    background: #B8D0E8;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+    color: #fdc073;
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.header img {
+    float: left;
+    margin: 10px 0 0 30px;
+}
+
+.header h1 {
+    float: left;
+    margin: 24px 0 0 30px;
+}
+
+div.content {
+    position: relative;
+    bottom: 6px;
+    max-width: 100%;
+    min-height: 85%;
+    margin: 10px;
+    padding: 5px;
+    border: 1.5px solid #333;
+    border-radius: 5px;
+    color: #110010;
+    text-margin: 5px;
+    box-shadow: 9px 10px 5px #e7e4d9;
+}
+
+.sum {
+    position: absolute;
+    right: 0;
+    border: 1.6px solid #333; /* Рамка левого меню */
+    border-radius: 5px;
+    width: 220px; /* Ширина левой колонки */
+    height: 90px;
+    padding: 0 0 5px 0; /* Поля внутри блока */
+    margin: 5px 165px auto auto; /* Значения отступа от блока */
+    background: #fffdf5;
+    box-shadow: 9px 10px 5px #e7e4d9;
+}
+
+.graph {
+    position: absolute;
+    overflow: auto;
+    max-width: 880px;
+    max-height: 600px;
+    top: 60px;
+    bottom: 20px;
+    right: 550px;
+    left: 20px;
+    border-radius: 5px;
+    box-shadow: 9px 10px 5px #e7e4d9;
+}
+
+.scrolling {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    max-width:600px;
+    max-height:520px;
+    background: #fdfdfd;
+    border: 0.5px solid #C1C1C1;
+    border-radius: 5px;
+    box-shadow: 9px 10px 5px #e7e4d9;
+    overflow: auto;
+}
+
+.table {
+	width: 100%;
+
+	border: none;
+	margin-bottom: 20px;
+}
+.table thead th {
+	font-weight: bold;
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	background: #D3CDAC;
+	font-size: 14px;
+}
+.table thead tr th:first-child {
+	border-radius: 5px 0 0 5px;
+}
+.table thead tr th:last-child {
+	border-radius: 0 5px 5px 0;
+}
+.table tbody td {
+	text-align: left;
+	border: none;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+.table tbody tr:nth-child(even){
+	background: #EBEAE4;
+}
+.table tbody tr td:first-child {
+	border-radius: 5px 0 0 5px;
+}
+.table tbody tr td:last-child {
+	border-radius: 0 5px 5px 0;
+}
+/* Стили для скролла */
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb {
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+

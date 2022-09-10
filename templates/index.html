@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="graph">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>-->
+<div  id="bargraph">
+    <script>
+        var graphs = {{plot | safe}};
+        Plotly.plot('bargraph',graphs,{});
+    </script>
+</div>
+</div>
+
+<div class="sum">
+    <div style="border-bottom: 1px solid #000; margin: 0;  background: black; border-radius: 4px; padding: 1px; ">
+        <p style="margin: 0 0 0 0; color: #fff; text-align: center; font-size: 22px; ">Total</p>
+    </div>
+    <p style="font-size: 60px;  text-align: center; margin: 0; ">
+    {{ sum }}
+    </p>
+</div>
+<div class="scrolling">
+
+{% for t in table %}
+            {{ t|safe }}
+{% endfor %}
+</div>
+
+{% endblock %}
