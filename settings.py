@@ -20,20 +20,20 @@ ChatID = ""
 # Путь к файлу с ключом к Google Sheets Api
 PATH_TO_SECRET_KEY = 'credentials.json'
 # Путь к таблице Google Sheets
-G_TABLE = os.getenv("G_TABLE")
+G_TABLE = https://docs.google.com/spreadsheets/d/1iidER40PNhBhtWDyUMdTvr5FoSJUr7rftr4t4IltMxE/edit?usp=sharing
 
 
 # Flask & Celery
-CELERY_BROKER_URL = os.getenv("CELERY_BROKER_URL")
-CELERY_RESULT_BACKEND = os.getenv("CELERY_RESULT_BACKEND")
+CELERY_BROKER_URL = redis://localhost:6379/1
+CELERY_RESULT_BACKEND = redis://localhost:6379/2
 
 
 # Database config
-DATABASE = os.getenv("DATABASE")
-DRIVER = os.getenv("DRIVER")
-PORT = os.getenv("PORT")
-HOST = os.getenv("HOST")
-NAME = os.getenv("NAME")
-OWNER = os.getenv("OWNER")
-PASSWORD = os.getenv("PASSWORD")
+DATABASE = postgresql
+DRIVER = psycopg2
+PORT = 5431
+HOST = localhost
+NAME = app
+OWNER = postgres
+PASSWORD = 123
 PG_CONFIG = f"{DATABASE}+{DRIVER}://{OWNER}:{PASSWORD}@{HOST}:{PORT}/{NAME}"
